@@ -1,0 +1,10 @@
+{
+  "name": "Tombola-BingoStrip",
+  "version": "0.0.0",
+  "description": "tombola bingo strip technical test",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "Richard Dowson"
+}
