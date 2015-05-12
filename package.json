@@ -2,5 +2,10 @@
   "name": "tombola-bingostrip",
   "version": "0.0.0",
   "description": "tombola bingo strip technical test",
-  "author": "Richard Dowson"
+  "author": "Richard Dowson",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.10.0",
+    "jshint-stylish": "^1.0.2"
+  }
 }
