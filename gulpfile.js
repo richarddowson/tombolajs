@@ -21,7 +21,8 @@ var path = {
   DEST_DIST: "dist",
   ENTRY_POINT: "./app/app.jsx",
   LESS: "app/styles.less",
-  LESS_OUT: "styles.css"
+  LESS_OUT: "styles.css",
+  MINIFIED_LESS_OUT: "styles.min.css"
 };
 
 gulp.task("lint", function(){
@@ -96,7 +97,8 @@ gulp.task("build-dev", function(){
 gulp.task("build-prod", function(){
   gulp.src(path.HTML)
     .pipe(htmlreplace({
-      "js": path.MINIFIED_OUT
+      "js": path.MINIFIED_OUT,
+      "css": path.MINIFIED_LESS_OUT
     }))
     .pipe(gulp.dest(path.DEST_DIST));
 
