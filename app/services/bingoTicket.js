@@ -10,6 +10,7 @@ function BingoTicket(numbersArray) {
       this.rows[row][col] = value;
     }
   }
+  this.toGo = 5;
 }
 
 module.exports = BingoTicket;

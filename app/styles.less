@@ -1,0 +1,101 @@
+@ticketPadding: 5px;
+@baseStripWidth: 275px;
+@baseToGoPanelWidth: 32px;
+@baseTicketTableWidth: 228px;
+@baseTicketTableHeight: 76px;
+.media-size(@width){
+  @scale: @width / @baseStripWidth;
+  @numberToGoPanelWidth: @baseToGoPanelWidth * @scale;
+  @tableWidth: @width - (@ticketPadding * 3) - @numberToGoPanelWidth;
+  @tableHeight: @baseTicketTableHeight * (@tableWidth / @baseTicketTableWidth);
+  @media only screen and (max-device-width: @width)
+  {
+    .ticketStrip {
+      width: @width;
+    }
+    .ticketContent table {
+      width: @tableWidth;
+      height: @tableHeight;
+    }
+    .ticketCell {
+      font-size: 1em * @scale;
+    }
+    .numberToGoPanel {
+      font-size: 0.9em * @scale;
+      width: @numberToGoPanelWidth;
+      .panelValue {
+        font-size: 1.6em * @scale;
+        line-height: 1.6em / @scale;
+      }
+    }
+  }
+}
+
+body, table {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body, div {
+  box-sizing: border-box;
+}
+.ticketStrip {
+  background-color: #fddbe4;
+  width: @baseStripWidth;
+}
+.ticket {
+  padding: @ticketPadding;
+  border-bottom: 1px dashed black;
+  width: 100%;
+}
+.ticketContent {
+  position: relative;
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: @baseTicketTableWidth;
+    height: @baseTicketTableHeight;
+  }
+}
+.ticketCell {
+  background-color: white;
+  border: 1px solid black;
+  font-size: 1em;
+  text-align: center;
+  padding: 0;
+}
+.numberCell {
+}
+.numberToGoPanel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  font-size: 0.9em;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: @baseToGoPanelWidth;
+  height: 100%;
+  background: linear-gradient(to bottom, #5aac5e 0%, #219128 50%, #017e02 51%, #007e01 100%);
+  color: white;
+  .panelValue {
+    font-size: 1.6em;
+    line-height: 1.6em;
+  }
+}
+.media-size(424px);
+.media-size(414px);
+.media-size(400px);
+.media-size(384px);
+.media-size(375px);
+.media-size(360px);
+.media-size(320px);
+.media-size(213px);
