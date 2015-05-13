@@ -15,33 +15,33 @@ The app has been tested against Chrome 42 and IE 11. Additional responsive layou
 1. Ensure that [NodeJS](http://nodejs.org/) is installed.
 2. From the project folder, execute the following commannd:
 
-        ```shell
-        npm install
-        ```
+```shell
+npm install
+```
 	
 3. To build a non-minified version of the app in the `build` folder: 
 
-        ```shell
-        npm run build-dev
-        ```
+```shell
+npm run build-dev
+```
     
 4. To build a minified version of the app in the `dist` folder: 
    
-        ```shell
-        npm run build-prod
-        ```
+```shell
+npm run build-prod
+```
       
 ## Running the tests
 
 Jasmine unit tests are provided for the core classes. To run:
 
-        ```shell
-        npm run test
-        ```
+```shell
+npm run test
+```
 
 To run JSHint:
 
-        ```shell
-        npm run lint
-        ```
+```shell
+npm run lint
+```
         
