@@ -1,8 +1,9 @@
 {
   "name": "tombola-bingostrip",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "tombola bingo strip technical test",
-  "author": "Richard Dowson",
+  "author": "Richard Dowson <richard.dowson@gmail.com>",
+  "licence": "MIT"
   "devDependencies": {
     "browserify": "^10.1.3",
     "gulp": "^3.8.11",
