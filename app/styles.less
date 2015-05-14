@@ -96,6 +96,20 @@ body, div {
     font-size: 1.6em;
     line-height: 1.6em;
   }
+  -webkit-animation: rotate 2000ms linear 1;
+  animation: rotate 2000ms linear 1;
+}
+@-webkit-keyframes rotate {
+  0% {-webkit-transform: rotateY(0deg)}
+  20% {-webkit-transform: rotateY(-360deg)}
+  50% {-webkit-transform: rotateY(0deg)}
+  100% {-webkit-transform: rotateY(-360deg)}
+}
+@keyframes rotate {
+  0% {transform: rotateY(0deg)}
+  20% {transform: rotateY(-360deg)}
+  50% {transform: rotateY(0deg)}
+  100% {transform: rotateY(-360deg)}
 }
 .media-size(424px);
 .media-size(414px);
