@@ -73,7 +73,13 @@ body, div {
   padding: 0;
 }
 .numberCell {
+  &.numberCellLoading {
+    animation: spin 200ms linear infinite;
+    -webkit-animation: spin 200ms linear infinite;
+  }
 }
+@-webkit-keyframes spin { 100% {-webkit-transform: rotate(360deg);}}
+@keyframes spin { 100% {transform: rotate(360deg);}}
 .numberToGoPanel {
   position: absolute;
   right: 0;
